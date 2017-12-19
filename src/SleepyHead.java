@@ -15,14 +15,17 @@ public class SleepyHead {
          * Ask the user for these values using
          * JOptionPane.showConfirmDialog(null, "is it a weekday?", "",
          * JOptionPane.YES_NO_OPTION);
+         * *Use Yes or no command in confirm dialog
          */
-    
-
+         JOptionPane.showConfirmDialog(null, "is it a weekday?",);
+         JOptionPane.showConfirmDialog(parentComponent, message)
 
         /*
          * Print “sleep in” if it is a vacation or a weekend. If it’s a weekday,
          * print “get up lazybones!” If it is a weekday, and we are on vacation,
          * print “sleep in”.
+         * *Use if statement and else if
          */
+         if
     }
 }
