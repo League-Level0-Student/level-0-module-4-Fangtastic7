@@ -29,7 +29,9 @@ public class Own_Adventures {
 			}
 			else {
 				JOptionPane.showMessageDialog(null, "Eh, you want to go there? I will show you the true path of the dark side."); 
+				JOptionPane.showMessageDialog(null, "Let me take you somewhere...");
 				playVideo("https://www.youtube.com/watch?v=wbWOVfY-rxU");
+				System.exit(0);
 			}
 		}
 		
@@ -38,11 +40,29 @@ public class Own_Adventures {
 			String location = JOptionPane.showInputDialog("Now, now, what location do you wish to teleport to? The attic or the dungeon?");
 			if(location.equalsIgnoreCase("attic")) {
 				JOptionPane.showMessageDialog(null, "Attic, the attic right. I will take you there in just a moment.");
-				
+				JOptionPane.showMessageDialog(null, "Follow me.");
 			}
 			else if(location.equalsIgnoreCase("dungeon")) {
 				JOptionPane.showMessageDialog(null, "Are you crazy! That's suicide!");
-				JOptionPane.showConfirmDialog(null, "You sure you still want to go?");
+				int response = JOptionPane.showConfirmDialog(null, "You sure you still want to go?");
+				if(response==1) {
+					JOptionPane.showMessageDialog(null, "Good choice. Now to the attic then.");
+					int response1 = JOptionPane.showConfirmDialog(null, "The attic is very dark and empty. Do you still want to go?");
+					if(response1==1) {
+						JOptionPane.showMessageDialog(null, "Good choice. Very well down to the living room.");
+					}
+						else if(response1==2) {
+							JOptionPane.showMessageDialog(null, "You see nothing in this room. All you see is a dark, empty room.");
+							JOptionPane.showMessageDialog(null, "This place is for prisoners and strangers who come to my property. People like you.");
+							System.exit(0);
+						}
+					}
+				
+			else if(response==2) {
+					JOptionPane.showMessageDialog(null, "You have been eaten by unfriendly monsters.");
+					System.exit(0);
+					
+				}
 			}
 		}
 		
