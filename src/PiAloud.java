@@ -40,10 +40,10 @@ public class PiAloud {
 		
 	// *7. Compare the users' char to the next digit of Pi
 	if(answer=='2') {
-		System.out.println("You are correct!");
+		JOptionPane.showMessageDialog(null, "You are correct!");
 	}
 	else {
-		System.err.println();
+		System.err.println("Incorrect!");
 	}
 	}
 	}

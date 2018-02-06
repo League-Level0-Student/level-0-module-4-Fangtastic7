@@ -22,18 +22,21 @@ public class HappyPet {
 
 			// 5. Use user input to call the appropriate method created in step 4.
 			if(task==0) {
+				JOptionPane.showMessageDialog(null, "Your " + pet + " companion enjoys the good exercise!");
 				walk();
 			}
 			else if(task==1) {
+				JOptionPane.showMessageDialog(null, "Your " + pet + " enjoys a delightful, refreshing drink!");
 				water();
 			}
 			else {
+				JOptionPane.showMessageDialog(null, "Your " + pet + " experiences a lovely rub and gives you a big lick.");
 				rub();
 			}
 			// 6. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
 			if(happinessLevel==5) {
-				JOptionPane.showMessageDialog(null, "You have given your pet lots of love and your pet is now fully devoted to you!");
+				JOptionPane.showMessageDialog(null, "You have given your " + pet + " lots of love and your pet is now fully devoted to you!");
 				break;
 			}
 	}
@@ -42,16 +45,16 @@ public class HappyPet {
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
 	private static void walk(){
-		JOptionPane.showMessageDialog(null, "Your companion enjoys the good exercise!");
-		int happinessLevel = +1;
+	
+		 happinessLevel = happinessLevel + 1;
 	}
 	private static void water() {
-		JOptionPane.showMessageDialog(null, "Your pet enjoys a delightful, refreshing drink!");
-		int happinessLevel= +1;
+		
+		 happinessLevel = happinessLevel+ 1;
 	}
 	private static void rub() {
-		JOptionPane.showMessageDialog(null, "You buddy experiences a lovely rub and gives you a big lick.");
-		int happinessLevel = +1;
 		
+		 happinessLevel = happinessLevel + 1;
+	
 	}
 }

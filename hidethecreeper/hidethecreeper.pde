@@ -19,7 +19,8 @@ void draw(){
     ellipse(mouseX,mouseY,10,10);
     fill(0,255,0);
     print("You found the creeper!");
-    
+   // change();
+    relocate();
   }
   else{
    ellipse(mouseX,mouseY,10,10);
@@ -28,8 +29,17 @@ void draw(){
  }
 }
 boolean isNear(int a, int b) {
-if (abs(a - b) < 10)
+if (abs(a - b) < 10){
+  
      return true;
-else
+}
+else{
      return false;
+}
+}
+
+void relocate(){
+  int X = (int) random(0,800);
+  int Y = (int) random(0,600);
+  image( creeper, X, Y);
 }
