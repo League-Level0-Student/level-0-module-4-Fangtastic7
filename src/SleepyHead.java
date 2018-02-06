@@ -35,7 +35,7 @@ public class SleepyHead {
         	 
         	 int vaca = JOptionPane.showConfirmDialog(null, "Are we on vacation?");
         	 if(vaca==0) {
-        		 JOptionPane.showMessageDialog(null, "sleep in.");
+        		 JOptionPane.showMessageDialog(null, "Sleep in.");
         	 }
         	 else {
         		 JOptionPane.showMessageDialog(null, "Get up lazybones!");
