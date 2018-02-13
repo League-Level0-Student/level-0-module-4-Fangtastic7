@@ -39,7 +39,7 @@ public class PiAloud {
 
 		
 	// *7. Compare the users' char to the next digit of Pi
-	if(answer=='2') {
+	if(answer==pi.charAt(i)) {
 		System.out.println("Correct!");
 	}
 	else {
