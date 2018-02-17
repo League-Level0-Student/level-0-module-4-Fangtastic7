@@ -33,7 +33,7 @@ public class HappyPet {
 				if(pet==1) {
 					attack();
 				}
-				water();
+					water();
 			}
 			else if(task==2) {
 				feed();
